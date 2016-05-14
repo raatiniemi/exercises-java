@@ -1,0 +1,18 @@
+group 'me.raatiniemi.exercises'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+// noinspection GroovyUnusedAssignment
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+// noinspection GroovyUnusedAssignment
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.11'
+}
