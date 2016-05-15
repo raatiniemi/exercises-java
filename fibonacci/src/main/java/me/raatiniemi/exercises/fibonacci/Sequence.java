@@ -17,19 +17,19 @@
 package me.raatiniemi.exercises.fibonacci;
 
 class Sequence {
-    private final int lhs;
-    private final int rhs;
+    private final long lhs;
+    private final long rhs;
 
-    private Sequence(int lhs, int rhs) {
+    private Sequence(long lhs, long rhs) {
         this.lhs = lhs;
         this.rhs = rhs;
     }
 
-    static Sequence build(int lhs, int rhs) {
+    static Sequence build(long lhs, long rhs) {
         return new Sequence(lhs, rhs);
     }
 
-    int calculateValue() {
+    long calculateValue() {
         return this.lhs + this.rhs;
     }
 
