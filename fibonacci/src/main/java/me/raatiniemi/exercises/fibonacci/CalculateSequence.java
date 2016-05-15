@@ -37,7 +37,7 @@ public class CalculateSequence {
         CalculateSequence calculateSequence = new CalculateSequence(sequenceCount);
         calculateSequence.calculate()
                 .stream()
-                .forEach(sequence -> System.out.println(sequence.calculateValue()));
+                .forEach(System.out::println);
     }
 
     List<Sequence> calculate() {

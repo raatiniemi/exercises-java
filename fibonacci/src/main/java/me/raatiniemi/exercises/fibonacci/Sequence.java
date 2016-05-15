@@ -36,4 +36,9 @@ class Sequence {
     Sequence calculateNextSequence() {
         return Sequence.build(this.rhs, this.calculateValue());
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(this.calculateValue());
+    }
 }
